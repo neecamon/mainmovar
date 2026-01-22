@@ -1,0 +1,200 @@
+/* --- LATAR BELAKANG UTAMA --- */
+QMainWindow, QWidget {
+    /* Mengganti hitam ke Cornsilk */
+    background-color: #fefae0; 
+    font-family: "Segoe UI", sans-serif;
+    color: #4a4a4a; /* Warna teks gelap agar terbaca di BG terang */
+}
+
+/* --- LABEL TEKS --- */
+QLabel {
+    /* Mengganti putih ke warna teks gelap */
+    color: #5d634f; 
+    font-size: 14px;
+}
+
+/* Judul MOVAR */
+#loginTitle { 
+    font-size: 48px;
+    font-weight: 900;
+    /* Mengganti Cyan ke Light Bronze */
+    color: #d4a373; 
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+#desc_app { 
+    font-size: 15px;
+    font-weight: 900;
+    /* Mengganti Cyan ke Light Bronze */
+    color: #d4a373; 
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+
+/* Pesan Salam (Gaya Surat) */
+#loginMessage {
+    font-family: "Segoe Print", "Ink Free", cursive;
+    /* Mengganti Emas ke Tea Green (Gelap) */
+    color: #8a966a; 
+    font-size: 12px;
+    padding: 10px;
+}
+
+#yourname {
+    font-size: 16px;
+    color: #5d634f;     /* Warna --tea-green versi gelap dari paletmu */
+    font-weight: bold;
+    margin-top: 15px;   /* Memberi jarak dari pesan surat di atasnya */
+    margin-bottom: 5px; /* Memberi jarak ke kotak input di bawahnya */
+    background: transparent; /* Memastikan tidak ada background yang menutupi */
+}
+
+/* Header Welcome di Dashboard */
+#welcomeLabel {
+    font-family: "Segoe Print", cursive; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #d4a373; /* Pakai Light Bronze agar seragam */
+    margin-left: 10px;
+}
+
+/* --- INPUT BOX --- */
+QLineEdit {
+    /* Mengganti Gelap ke Beige */
+    background-color: #e9edc9; 
+    /* Mengganti Abu ke Tea Green */
+    border: 2px solid #ccd5ae; 
+    border-radius: 10px;
+    padding: 8px;
+    color: #4a4a4a;
+    selection-background-color: #d4a373;
+}
+
+QLineEdit:focus {
+    /* Fokus ke Light Bronze */
+    border: 2px solid #d4a373;
+}
+
+/* 1. Mengatur tampilan utama dropdown */
+QComboBox {
+    background-color: #e9edc9; /* --beige */
+    border: 2px solid #ccd5ae; /* --tea-green */
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #4a4a4a;
+    min-height: 30px;
+}
+
+QComboBox:focus {
+    border: 2px solid #d4a373; /* --light-bronze saat diklik */
+}
+
+/* 2. Mengatur tampilan tombol panah kecil di kanan */
+QComboBox::drop-down {
+    border: 0px; /* Menghilangkan garis pembatas default */
+    width: 30px;
+}
+
+/* 3. Menghias list/daftar pilihan yang muncul saat diklik */
+QComboBox QAbstractItemView {
+    background-color: #fefae0; /* --cornsilk */
+    border: 1px solid #ccd5ae;
+    selection-background-color: #d4a373; /* Warna saat mouse menunjuk pilihan */
+    selection-color: white;
+    outline: none;
+}
+
+/* Mengatur kotak review (Multi-line input) agar punya bingkai */
+QTextEdit {
+    background-color: #e9edc9; /* --beige */
+    border: 2px solid #ccd5ae; /* --tea-green */
+    border-radius: 10px;
+    padding: 8px;
+    color: #4a4a4a;
+    selection-background-color: #d4a373;
+}
+
+/* Efek saat kolom review diklik */
+QTextEdit:focus {
+    border: 2px solid #d4a373; /* --light-bronze */
+}
+
+/* Batang Slider */
+QSlider::groove:horizontal {
+    border: 1px solid #ccd5ae;
+    height: 8px;
+    background: #e9edc9;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+/* Bagian yang digeser (Handle) */
+QSlider::handle:horizontal {
+    background: #d4a373; /* --light-bronze */
+    border: 1px solid #d4a373;
+    width: 18px;
+    height: 18px;
+    margin: -7px 0; 
+    border-radius: 9px;
+}
+
+/* Warna label angka rating */
+#ratingLabel {
+    font-weight: bold;
+    color: #d4a373;
+    margin-top: 10px;
+}
+
+/* --- TOMBOL (PUSH BUTTON) --- */
+QPushButton {
+    /* Mengganti Cyan ke Light Bronze */
+    background-color: #d4a373;
+    color: #fefae0; 
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    /* Hover ke Papaya Whip */
+    background-color: #faedcd;
+    color: #d4a373;
+}
+
+QPushButton:pressed {
+    /* Saat diklik sedikit lebih gelap */
+    background-color: #b38659;
+}
+
+/* --- TAB BAR --- */
+QTabBar::tab {
+    /* Mengganti Gelap ke Tea Green */
+    background-color: #ccd5ae; 
+    color: #5d634f;
+    padding: 10px 20px;
+    min-width: 100px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 5px;
+}
+
+QTabBar::tab:selected {
+    /* Tab Aktif ke Beige */
+    background-color: #e9edc9; 
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover {
+    background-color: #dce3c1;
+}
+
+/* Kotak di bawah Tab */
+QTabWidget::pane {
+    border: 1px solid #ccd5ae;
+    top: -1px;
+    background-color: #fefae0;
+}
